@@ -7,8 +7,8 @@
 
 // MARK: - Restore Tweet Source Labels / Account Locations
 //
-// Neither the source nor the author's "based in" country survive in the on-device
-// status models, so both are fetched from x.com's web GraphQL endpoints (reusing the
+// The author's "based in" country does not survive in the on-device
+// status models, so this is fetched from x.com's web GraphQL endpoints (reusing the
 // web session that WebCreateTweet.x establishes), cached, and appended to the detail
 // footer item's time string. Original idea by @nyaathea; the account-location half
 // mirrors what Control Panel for Twitter does on the web.
@@ -355,7 +355,7 @@ static NSString* screenNameFromStatus(id status) {
     %orig;
 }
 
-// Rewrites timeAgo as "<time> · <source> · <location>", keeping the order stable no
+// Rewrites timeAgo as "<time> · <location>", keeping the order stable no
 // matter which of the two fetches resolves first.
 %new
 - (void)BHT_composeFooterSuffixWithLocation:(NSString*)location {
