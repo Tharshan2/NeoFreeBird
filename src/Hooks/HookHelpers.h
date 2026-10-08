@@ -20,7 +20,6 @@
 #import "CustomTabBar/CustomTabBarUtility.h"
 #import "Download/DownloadInlineButton.h"
 #import "Headers/TWHeaders.h"
-#import "LegacyLogin/LegacyLoginViewController.h"
 #import "Padlock/AuthViewController.h"
 #import "Settings/ModernSettingsViewController.h"
 #import "ThemeColor/BHTDimPalette.h"
