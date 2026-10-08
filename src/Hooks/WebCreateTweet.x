@@ -1216,7 +1216,6 @@ static NSDictionary* cachedWebSessionForAccount(id account) {
         session = cachedWebSessionForAccount(account);
     }
 
-    NSString* dbgUID = userIDStringForAccount(account);
     WKWebViewConfiguration* config =
         [result isKindOfClass:[WKWebViewConfiguration class]] ? result : configuration;
     if (!session || ![config isKindOfClass:[WKWebViewConfiguration class]]) {

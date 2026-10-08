@@ -56,9 +56,6 @@ void applyHideCustomTimelinesSetting(void);
 // gates (FeatureSwitches.x)
 BOOL panelIsGenuinelyAvailable(long long panelID);
 
-// Restored tweet source labels, keyed by tweet ID (SourceLabels.x)
-extern NSMutableDictionary* tweetSources;
-
 // Web session cookie harvesting (WebCreateTweet.x)
 void prewarmWebCookiesIfNeeded(void);
 void maybeHandleHarvestWebView(__unsafe_unretained id webViewController);
