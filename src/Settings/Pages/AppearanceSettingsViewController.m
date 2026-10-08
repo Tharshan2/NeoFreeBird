@@ -9,6 +9,7 @@
 #import "Core/BHTBundle.h"
 #import "Core/BHTSettings.h"
 #import "Headers/TWHeaders.h"
+#import "Headers/Helpers.h"
 #import "Settings/ModernSettingsCells.h"
 
 @interface AppearanceSettingsViewController () <UIFontPickerViewControllerDelegate>
@@ -25,6 +26,17 @@
 
 - (NSString*)pageKey {
     return @"appearance";
+}
+
+- (void)updateVisibleToggles {
+    [super updateVisibleToggles];
+    // macOS doesn't support alternate app icons, so hide the row entirely.
+    if (is_Mac()) {
+        NSPredicate* notAppIcon = [NSPredicate predicateWithBlock:^BOOL(NSDictionary* toggle, NSDictionary* bindings) {
+            return ![toggle[@"action"] isEqualToString:@"showAppIconViewController:"];
+        }];
+        self.visibleToggles = [self.visibleToggles filteredArrayUsingPredicate:notAppIcon];
+    }
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView

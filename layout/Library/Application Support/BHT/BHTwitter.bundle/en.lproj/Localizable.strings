@@ -302,6 +302,8 @@
 "DOWNLOAD_ALL_VIDEOS_OPTION_TITLE" = "Download all videos";
 
 /*App icon*/
+"APP_ICON_SETTINGS_MAC_ALERT_TITLE" = "Icon change failed";
+"APP_ICON_SETTINGS_MAC_ALERT_MESSAGE" = "Icons can't be changed on macOS, this is an Apple limitation.";
 
 /*Copy profile info*/
 "COPY_PROFILE_INFO_MENU_OPTION_1" = "Copy bio";

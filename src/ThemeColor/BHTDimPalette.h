@@ -8,9 +8,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- * Whether the classic Twitter "Dim" recolor should replace the app's native
- * Dark palette. Hardcoded on for now; swap the body for a BHTSettings lookup
- * once there's a settings entry for it.
+ * Returns YES if the Dim theme is enabled, NO otherwise.
  */
 BOOL BHTDimThemeEnabled(void);
 
