@@ -1,9 +1,13 @@
 <div align="center">
     <img src="resources/icon_rounded.png" alt="NeoFreeBird-BHTwitter" width="130" height="130">
-
-
-  # NeoFreeBird-BHTwitter
+ 
+  # NeoFreeBird-BHTwitter (tweak)
   <i>The ultimate way to tweak your Twitter/X experience.</i>
+</div>
+<br>
+
+> [!WARNING]  
+> <b>This repository has been archived. All further development has been moved to the [NeoFreeBird/app](https://github.com/NeoFreeBird/app) repository.
 
   ## Twitter Branding
 
